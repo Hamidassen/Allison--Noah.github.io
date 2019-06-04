@@ -1,24 +1,4 @@
-<!DOCTYPE html>
-<script src="vendor/aframe/build/aframe.min.js"></script>
-<!-- include aframe-ar.js -->
-<script src="../build/aframe-ar.js"></script>
-<!-- Register an aframe component that allows reacting to marker events -->
-<script>
-	AFRAME.registerComponent('registerevents', {
-		init: function () {
-			var marker = this.el;
-			marker.addEventListener('markerFound', function() {
-				var markerId = marker.id;
-				console.log('markerFound', markerId);
-				// TODO: Add your own code here to react to the marker being found.
-			});
-			marker.addEventListener('markerLost', function() {
-				var markerId = marker.id;
-				console.log('markerLost', markerId);
-				// TODO: Add your own code here to react to the marker being lost.
-			});
-		}
-	});
+
 </script>
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 
